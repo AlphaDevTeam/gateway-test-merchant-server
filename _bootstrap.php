@@ -46,8 +46,10 @@ if (strcasecmp($region, "ASIA_PACIFIC") == 0) {
     $prefix = 'mtf.';
 } else if (strcasecmp($region, "QA01") == 0) {
     $prefix = 'qa01.';
+} else if (strcasecmp($region, "cbcmpgs") == 0) {
+    $prefix = 'cbcmpgs.';
 } else {
-    error(500, "Invalid region provided. Valid values include ASIA_PACIFIC, EUROPE, NORTH_AMERICA, INDIA, MTF");
+    error(500, "Invalid region provided. Valid values include ASIA_PACIFIC, EUROPE, NORTH_AMERICA, INDIA, MTF,cbcmpgs");
 }
 
 // validate apiVersion is above minimum
